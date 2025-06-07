@@ -19,6 +19,6 @@ app.get("/login",function(req,res){
     }
 })
 
-app.listen(3000,function(){
+app.listen(`http://netflix-backend.up.railway.app`,function(){
     console.log("server started....");
 })
