@@ -7,7 +7,7 @@ app.use(cors())
 var username="rahaman@gmail.com"
 var password = 123456
 
-app.get("/login",function(req,res){
+app.get("http://netflix-backend.up.railway.app/login",function(req,res){
 
     console.log(req.query.username)
     if(req.query.username === username  && req.query.password == password )
@@ -19,6 +19,6 @@ app.get("/login",function(req,res){
     }
 })
 
-app.listen(`http://netflix-backend.up.railway.app`,function(){
+app.listen(3000,function(){
     console.log("server started....");
 })
