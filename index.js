@@ -7,7 +7,7 @@ app.use(cors())
 var username="rahaman@gmail.com"
 var password = 123456
 
-app.get("http://netflix-backend.up.railway.app/login",function(req,res){
+app.get("/login",function(req,res){
 
     console.log(req.query.username)
     if(req.query.username === username  && req.query.password == password )
